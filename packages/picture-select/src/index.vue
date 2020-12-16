@@ -1,8 +1,7 @@
 <template>
     <div class="p-picture-select" :style="{ width: width + 'px', height: height + 'px' }">
         <div class="content">
-            <i class="h-icon-add"></i>
-            <div>以脸搜脸</div>
+            <div>+</div>
             <input class="file-input" ref="file" type="file" :accept="type" @change="change" />
         </div>
 
@@ -62,24 +61,20 @@ export default {
     background-color: #ececec;
     .content {
         display: flex;
+        position: relative;
         flex-direction: column;
         height: 100%;
         width: 100%;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        i {
-            font-size: 24px;
-            color: rgba(0, 0, 0, 0.4);
-        }
         div {
-            margin-top: 10px;
             font-family: Microsoft YaHei;
-            font-size: 14px;
+            font-size: 30px;
             color: rgba(0, 0, 0, 0.4);
             letter-spacing: 0;
             text-align: center;
-            line-height: 20px;
+            line-height: 32px;
         }
     }
     .file-input {
